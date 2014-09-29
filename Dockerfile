@@ -1,4 +1,4 @@
-FROM base/archlinux
+FROM justin8/archlinux
 MAINTAINER justin@dray.be
 
 RUN pacman -Syq --noprogressbar --noconfirm deluge python2-mako unrar unzip
