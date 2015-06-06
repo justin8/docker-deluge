@@ -1,7 +1,7 @@
 FROM justin8/archlinux
 MAINTAINER justin@dray.be
 
-RUN pacman -Syq --noprogressbar --noconfirm deluge python2-mako unrar unzip
+RUN pacman -Syq --noprogressbar --noconfirm deluge python2-mako unrar unzip && rm -rf /var/cache/pacman/pkg/*
 
 VOLUME "/config"
 
